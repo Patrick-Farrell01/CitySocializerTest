@@ -19,6 +19,11 @@
 		CD987097185A021B00F9E94D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD98707F185A021B00F9E94D /* UIKit.framework */; };
 		CD98709F185A021B00F9E94D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD98709D185A021B00F9E94D /* InfoPlist.strings */; };
 		CD9870A1185A021B00F9E94D /* AmazingInterviewAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870A0185A021B00F9E94D /* AmazingInterviewAppTests.m */; };
+		CD9870B4185A041000F9E94D /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870AB185A041000F9E94D /* FMDatabase.m */; };
+		CD9870B5185A041000F9E94D /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870AD185A041000F9E94D /* FMDatabaseAdditions.m */; };
+		CD9870B6185A041000F9E94D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870AF185A041000F9E94D /* FMResultSet.m */; };
+		CD9870B7185A041000F9E94D /* FMDatabase+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870B1185A041000F9E94D /* FMDatabase+Extras.m */; };
+		CD9870B8185A041000F9E94D /* FMDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870B3185A041000F9E94D /* FMDatabaseManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,17 @@
 		CD98709C185A021B00F9E94D /* AmazingInterviewAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmazingInterviewAppTests-Info.plist"; sourceTree = "<group>"; };
 		CD98709E185A021B00F9E94D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD9870A0185A021B00F9E94D /* AmazingInterviewAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazingInterviewAppTests.m; sourceTree = "<group>"; };
+		CD9870AA185A041000F9E94D /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		CD9870AB185A041000F9E94D /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		CD9870AC185A041000F9E94D /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		CD9870AD185A041000F9E94D /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		CD9870AE185A041000F9E94D /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		CD9870AF185A041000F9E94D /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		CD9870B0185A041000F9E94D /* FMDatabase+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+Extras.h"; sourceTree = "<group>"; };
+		CD9870B1185A041000F9E94D /* FMDatabase+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+Extras.m"; sourceTree = "<group>"; };
+		CD9870B2185A041000F9E94D /* FMDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseManager.h; sourceTree = "<group>"; };
+		CD9870B3185A041000F9E94D /* FMDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseManager.m; sourceTree = "<group>"; };
+		CD9870B9185A042800F9E94D /* AmazingInterview.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazingInterview.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +123,7 @@
 		CD987081185A021B00F9E94D /* AmazingInterviewApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD9870BA185A043000F9E94D /* Database */,
 				CD98708A185A021B00F9E94D /* AppDelegate.h */,
 				CD98708B185A021B00F9E94D /* AppDelegate.m */,
 				CD98708D185A021B00F9E94D /* Images.xcassets */,
@@ -142,6 +159,24 @@
 				CD98709D185A021B00F9E94D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD9870BA185A043000F9E94D /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				CD9870B9185A042800F9E94D /* AmazingInterview.db */,
+				CD9870AA185A041000F9E94D /* FMDatabase.h */,
+				CD9870AB185A041000F9E94D /* FMDatabase.m */,
+				CD9870AC185A041000F9E94D /* FMDatabaseAdditions.h */,
+				CD9870AD185A041000F9E94D /* FMDatabaseAdditions.m */,
+				CD9870AE185A041000F9E94D /* FMResultSet.h */,
+				CD9870AF185A041000F9E94D /* FMResultSet.m */,
+				CD9870B0185A041000F9E94D /* FMDatabase+Extras.h */,
+				CD9870B1185A041000F9E94D /* FMDatabase+Extras.m */,
+				CD9870B2185A041000F9E94D /* FMDatabaseManager.h */,
+				CD9870B3185A041000F9E94D /* FMDatabaseManager.m */,
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9870B4185A041000F9E94D /* FMDatabase.m in Sources */,
 				CD98708C185A021B00F9E94D /* AppDelegate.m in Sources */,
 				CD987088185A021B00F9E94D /* main.m in Sources */,
+				CD9870B5185A041000F9E94D /* FMDatabaseAdditions.m in Sources */,
+				CD9870B7185A041000F9E94D /* FMDatabase+Extras.m in Sources */,
+				CD9870B6185A041000F9E94D /* FMResultSet.m in Sources */,
+				CD9870B8185A041000F9E94D /* FMDatabaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
