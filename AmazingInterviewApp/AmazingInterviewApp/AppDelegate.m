@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "FMDatabaseManager.h"
+#import "MyDetailsViewController.h"
+#import "MyFriendsViewController.h"
+#import "AppNavigationController.h"
+#import "AppTabBarController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +20,18 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    //copy the database into the app if needed
+    [[FMDatabaseManager sharedInstance] copyDatabaseIfNeeded:@"interview.db"];
+    
+    //create
+    [self createViewControllers];
+    
+    //customistations
+    [self performCustomisations];
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -45,5 +62,45 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+#pragma mark Instance Methods
+
+// Create the inital view controller(s) of the app
+- (void) createViewControllers
+{
+    //create pointers for view controllers
+    UIViewController * myDetailsViewController = [[MyDetailsViewController alloc] init];
+    UIViewController * friendsViewController = [[MyFriendsViewController alloc] init];
+    
+    //add each to their own nav controller
+    AppNavigationController * detailsNavController = [[AppNavigationController alloc] initWithRootViewController:myDetailsViewController];
+    
+    AppNavigationController * friendsNavController = [[AppNavigationController alloc] initWithRootViewController:friendsViewController];
+    
+    //create array of these nav controller to be submitted to the tab bar controller
+    NSArray * tabBarViewControllerArray = [[NSArray alloc] initWithObjects:detailsNavController,friendsNavController, nil];
+    
+    //add each nav controller to the tab bar controller
+    AppTabBarController * tabBarController = [[AppTabBarController alloc] init];
+    [tabBarController setViewControllers:tabBarViewControllerArray];
+    
+    //add completed tab bar controller to the windows
+    [[self window] setRootViewController:tabBarController];
+    
+}
+
+// Customise the app in any way we want here. Theme colors etc
+- (void) performCustomisations
+{
+    
+}
+
+// Customise the Navigation Bars' appearance
+- (void) customiseNavigationBar
+{
+    
+}
+
 
 @end

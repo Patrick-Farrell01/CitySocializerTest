@@ -10,6 +10,15 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+// **** Members **** //
+
 @property (strong, nonatomic) UIWindow *window;
+
+
+// **** Methods **** //
+
+- (void) createViewControllers;
+- (void) performCustomisations;
+- (void) customiseNavigationBar;
 
 @end

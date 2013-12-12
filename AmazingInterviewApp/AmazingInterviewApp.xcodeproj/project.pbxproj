@@ -24,6 +24,16 @@
 		CD9870B6185A041000F9E94D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870AF185A041000F9E94D /* FMResultSet.m */; };
 		CD9870B7185A041000F9E94D /* FMDatabase+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870B1185A041000F9E94D /* FMDatabase+Extras.m */; };
 		CD9870B8185A041000F9E94D /* FMDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870B3185A041000F9E94D /* FMDatabaseManager.m */; };
+		CD9870C0185A08F200F9E94D /* MyDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870BE185A08F200F9E94D /* MyDetailsViewController.m */; };
+		CD9870C1185A08F200F9E94D /* MyDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9870BF185A08F200F9E94D /* MyDetailsViewController.xib */; };
+		CD9870C7185A099900F9E94D /* MyFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870C5185A099900F9E94D /* MyFriendsViewController.m */; };
+		CD9870C8185A099900F9E94D /* MyFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9870C6185A099900F9E94D /* MyFriendsViewController.xib */; };
+		CD9870CC185A09B600F9E94D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870CA185A09B600F9E94D /* LoginViewController.m */; };
+		CD9870CD185A09B600F9E94D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9870CB185A09B600F9E94D /* LoginViewController.xib */; };
+		CD9870D2185A0A7000F9E94D /* AppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870CF185A0A7000F9E94D /* AppNavigationController.m */; };
+		CD9870D3185A0A7000F9E94D /* AppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870D1185A0A7000F9E94D /* AppTabBarController.m */; };
+		CD9870D5185A0C5200F9E94D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9870D4185A0C5200F9E94D /* libsqlite3.dylib */; };
+		CD9870D7185A0FA100F9E94D /* interview.db in Resources */ = {isa = PBXBuildFile; fileRef = CD9870D6185A0FA100F9E94D /* interview.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +73,21 @@
 		CD9870B1185A041000F9E94D /* FMDatabase+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+Extras.m"; sourceTree = "<group>"; };
 		CD9870B2185A041000F9E94D /* FMDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseManager.h; sourceTree = "<group>"; };
 		CD9870B3185A041000F9E94D /* FMDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseManager.m; sourceTree = "<group>"; };
-		CD9870B9185A042800F9E94D /* AmazingInterview.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmazingInterview.db; sourceTree = "<group>"; };
+		CD9870BD185A08F200F9E94D /* MyDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDetailsViewController.h; sourceTree = "<group>"; };
+		CD9870BE185A08F200F9E94D /* MyDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDetailsViewController.m; sourceTree = "<group>"; };
+		CD9870BF185A08F200F9E94D /* MyDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDetailsViewController.xib; sourceTree = "<group>"; };
+		CD9870C4185A099900F9E94D /* MyFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFriendsViewController.h; sourceTree = "<group>"; };
+		CD9870C5185A099900F9E94D /* MyFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFriendsViewController.m; sourceTree = "<group>"; };
+		CD9870C6185A099900F9E94D /* MyFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyFriendsViewController.xib; sourceTree = "<group>"; };
+		CD9870C9185A09B600F9E94D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CD9870CA185A09B600F9E94D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CD9870CB185A09B600F9E94D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		CD9870CE185A0A7000F9E94D /* AppNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNavigationController.h; sourceTree = "<group>"; };
+		CD9870CF185A0A7000F9E94D /* AppNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavigationController.m; sourceTree = "<group>"; };
+		CD9870D0185A0A7000F9E94D /* AppTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTabBarController.h; sourceTree = "<group>"; };
+		CD9870D1185A0A7000F9E94D /* AppTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTabBarController.m; sourceTree = "<group>"; };
+		CD9870D4185A0C5200F9E94D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CD9870D6185A0FA100F9E94D /* interview.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = interview.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9870D5185A0C5200F9E94D /* libsqlite3.dylib in Frameworks */,
 				CD98707E185A021B00F9E94D /* CoreGraphics.framework in Frameworks */,
 				CD987080185A021B00F9E94D /* UIKit.framework in Frameworks */,
 				CD98707C185A021B00F9E94D /* Foundation.framework in Frameworks */,
@@ -112,6 +137,7 @@
 		CD98707A185A021B00F9E94D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD9870D4185A0C5200F9E94D /* libsqlite3.dylib */,
 				CD98707B185A021B00F9E94D /* Foundation.framework */,
 				CD98707D185A021B00F9E94D /* CoreGraphics.framework */,
 				CD98707F185A021B00F9E94D /* UIKit.framework */,
@@ -123,9 +149,10 @@
 		CD987081185A021B00F9E94D /* AmazingInterviewApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD9870BC185A052500F9E94D /* Resources */,
 				CD9870BA185A043000F9E94D /* Database */,
-				CD98708A185A021B00F9E94D /* AppDelegate.h */,
-				CD98708B185A021B00F9E94D /* AppDelegate.m */,
+				CD9870BB185A051900F9E94D /* Classes */,
+				CD9870C2185A091500F9E94D /* User Interface */,
 				CD98708D185A021B00F9E94D /* Images.xcassets */,
 				CD987082185A021B00F9E94D /* Supporting Files */,
 			);
@@ -164,7 +191,7 @@
 		CD9870BA185A043000F9E94D /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				CD9870B9185A042800F9E94D /* AmazingInterview.db */,
+				CD9870D6185A0FA100F9E94D /* interview.db */,
 				CD9870AA185A041000F9E94D /* FMDatabase.h */,
 				CD9870AB185A041000F9E94D /* FMDatabase.m */,
 				CD9870AC185A041000F9E94D /* FMDatabaseAdditions.h */,
@@ -177,6 +204,50 @@
 				CD9870B3185A041000F9E94D /* FMDatabaseManager.m */,
 			);
 			name = Database;
+			sourceTree = "<group>";
+		};
+		CD9870BB185A051900F9E94D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CD98708A185A021B00F9E94D /* AppDelegate.h */,
+				CD98708B185A021B00F9E94D /* AppDelegate.m */,
+				CD9870CE185A0A7000F9E94D /* AppNavigationController.h */,
+				CD9870CF185A0A7000F9E94D /* AppNavigationController.m */,
+				CD9870D0185A0A7000F9E94D /* AppTabBarController.h */,
+				CD9870D1185A0A7000F9E94D /* AppTabBarController.m */,
+				CD9870C3185A095800F9E94D /* View Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		CD9870BC185A052500F9E94D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CD9870C2185A091500F9E94D /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CD9870CB185A09B600F9E94D /* LoginViewController.xib */,
+				CD9870C6185A099900F9E94D /* MyFriendsViewController.xib */,
+				CD9870BF185A08F200F9E94D /* MyDetailsViewController.xib */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		CD9870C3185A095800F9E94D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD9870BD185A08F200F9E94D /* MyDetailsViewController.h */,
+				CD9870BE185A08F200F9E94D /* MyDetailsViewController.m */,
+				CD9870C4185A099900F9E94D /* MyFriendsViewController.h */,
+				CD9870C5185A099900F9E94D /* MyFriendsViewController.m */,
+				CD9870C9185A09B600F9E94D /* LoginViewController.h */,
+				CD9870CA185A09B600F9E94D /* LoginViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +325,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9870CD185A09B600F9E94D /* LoginViewController.xib in Resources */,
+				CD9870C8185A099900F9E94D /* MyFriendsViewController.xib in Resources */,
 				CD987086185A021B00F9E94D /* InfoPlist.strings in Resources */,
 				CD98708E185A021B00F9E94D /* Images.xcassets in Resources */,
+				CD9870C1185A08F200F9E94D /* MyDetailsViewController.xib in Resources */,
+				CD9870D7185A0FA100F9E94D /* interview.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,10 +352,15 @@
 				CD9870B4185A041000F9E94D /* FMDatabase.m in Sources */,
 				CD98708C185A021B00F9E94D /* AppDelegate.m in Sources */,
 				CD987088185A021B00F9E94D /* main.m in Sources */,
+				CD9870D3185A0A7000F9E94D /* AppTabBarController.m in Sources */,
+				CD9870D2185A0A7000F9E94D /* AppNavigationController.m in Sources */,
 				CD9870B5185A041000F9E94D /* FMDatabaseAdditions.m in Sources */,
+				CD9870CC185A09B600F9E94D /* LoginViewController.m in Sources */,
 				CD9870B7185A041000F9E94D /* FMDatabase+Extras.m in Sources */,
 				CD9870B6185A041000F9E94D /* FMResultSet.m in Sources */,
+				CD9870C7185A099900F9E94D /* MyFriendsViewController.m in Sources */,
 				CD9870B8185A041000F9E94D /* FMDatabaseManager.m in Sources */,
+				CD9870C0185A08F200F9E94D /* MyDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
