@@ -34,6 +34,13 @@
 		CD9870D3185A0A7000F9E94D /* AppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870D1185A0A7000F9E94D /* AppTabBarController.m */; };
 		CD9870D5185A0C5200F9E94D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9870D4185A0C5200F9E94D /* libsqlite3.dylib */; };
 		CD9870D7185A0FA100F9E94D /* interview.db in Resources */ = {isa = PBXBuildFile; fileRef = CD9870D6185A0FA100F9E94D /* interview.db */; };
+		CD9870D9185B391A00F9E94D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9870D8185B391A00F9E94D /* FacebookSDK.framework */; };
+		CD9870DC185B395400F9E94D /* FacebookSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870DB185B395400F9E94D /* FacebookSessionManager.m */; };
+		CD9870E0185B3D8400F9E94D /* CustomColorsLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870DF185B3D8400F9E94D /* CustomColorsLoader.m */; };
+		CD9870E2185B3D9200F9E94D /* CustomColors.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD9870E1185B3D9200F9E94D /* CustomColors.plist */; };
+		CD9870E5185B434A00F9E94D /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870E4185B434A00F9E94D /* UIColor+Additions.m */; };
+		CD9870E7185B445B00F9E94D /* facebooklogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9870E6185B445B00F9E94D /* facebooklogo.png */; };
+		CD9870EA185B4C1700F9E94D /* TwitterLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870E9185B4C1700F9E94D /* TwitterLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +95,17 @@
 		CD9870D1185A0A7000F9E94D /* AppTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTabBarController.m; sourceTree = "<group>"; };
 		CD9870D4185A0C5200F9E94D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CD9870D6185A0FA100F9E94D /* interview.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = interview.db; sourceTree = "<group>"; };
+		CD9870D8185B391A00F9E94D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		CD9870DA185B395400F9E94D /* FacebookSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookSessionManager.h; sourceTree = "<group>"; };
+		CD9870DB185B395400F9E94D /* FacebookSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookSessionManager.m; sourceTree = "<group>"; };
+		CD9870DE185B3D8400F9E94D /* CustomColorsLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomColorsLoader.h; sourceTree = "<group>"; };
+		CD9870DF185B3D8400F9E94D /* CustomColorsLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomColorsLoader.m; sourceTree = "<group>"; };
+		CD9870E1185B3D9200F9E94D /* CustomColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CustomColors.plist; sourceTree = "<group>"; };
+		CD9870E3185B434A00F9E94D /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		CD9870E4185B434A00F9E94D /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		CD9870E6185B445B00F9E94D /* facebooklogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebooklogo.png; sourceTree = "<group>"; };
+		CD9870E8185B4C1700F9E94D /* TwitterLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterLoginViewController.h; sourceTree = "<group>"; };
+		CD9870E9185B4C1700F9E94D /* TwitterLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD9870D9185B391A00F9E94D /* FacebookSDK.framework in Frameworks */,
 				CD9870D5185A0C5200F9E94D /* libsqlite3.dylib in Frameworks */,
 				CD98707E185A021B00F9E94D /* CoreGraphics.framework in Frameworks */,
 				CD987080185A021B00F9E94D /* UIKit.framework in Frameworks */,
@@ -137,6 +156,7 @@
 		CD98707A185A021B00F9E94D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD9870D8185B391A00F9E94D /* FacebookSDK.framework */,
 				CD9870D4185A0C5200F9E94D /* libsqlite3.dylib */,
 				CD98707B185A021B00F9E94D /* Foundation.framework */,
 				CD98707D185A021B00F9E94D /* CoreGraphics.framework */,
@@ -149,6 +169,7 @@
 		CD987081185A021B00F9E94D /* AmazingInterviewApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD9870DD185B3D6F00F9E94D /* Helpers */,
 				CD9870BC185A052500F9E94D /* Resources */,
 				CD9870BA185A043000F9E94D /* Database */,
 				CD9870BB185A051900F9E94D /* Classes */,
@@ -215,6 +236,8 @@
 				CD9870CF185A0A7000F9E94D /* AppNavigationController.m */,
 				CD9870D0185A0A7000F9E94D /* AppTabBarController.h */,
 				CD9870D1185A0A7000F9E94D /* AppTabBarController.m */,
+				CD9870DA185B395400F9E94D /* FacebookSessionManager.h */,
+				CD9870DB185B395400F9E94D /* FacebookSessionManager.m */,
 				CD9870C3185A095800F9E94D /* View Controllers */,
 			);
 			name = Classes;
@@ -223,6 +246,8 @@
 		CD9870BC185A052500F9E94D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CD9870E6185B445B00F9E94D /* facebooklogo.png */,
+				CD9870E1185B3D9200F9E94D /* CustomColors.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -246,8 +271,21 @@
 				CD9870C5185A099900F9E94D /* MyFriendsViewController.m */,
 				CD9870C9185A09B600F9E94D /* LoginViewController.h */,
 				CD9870CA185A09B600F9E94D /* LoginViewController.m */,
+				CD9870E8185B4C1700F9E94D /* TwitterLoginViewController.h */,
+				CD9870E9185B4C1700F9E94D /* TwitterLoginViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CD9870DD185B3D6F00F9E94D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CD9870DE185B3D8400F9E94D /* CustomColorsLoader.h */,
+				CD9870DF185B3D8400F9E94D /* CustomColorsLoader.m */,
+				CD9870E3185B434A00F9E94D /* UIColor+Additions.h */,
+				CD9870E4185B434A00F9E94D /* UIColor+Additions.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,9 +365,11 @@
 			files = (
 				CD9870CD185A09B600F9E94D /* LoginViewController.xib in Resources */,
 				CD9870C8185A099900F9E94D /* MyFriendsViewController.xib in Resources */,
+				CD9870E2185B3D9200F9E94D /* CustomColors.plist in Resources */,
 				CD987086185A021B00F9E94D /* InfoPlist.strings in Resources */,
 				CD98708E185A021B00F9E94D /* Images.xcassets in Resources */,
 				CD9870C1185A08F200F9E94D /* MyDetailsViewController.xib in Resources */,
+				CD9870E7185B445B00F9E94D /* facebooklogo.png in Resources */,
 				CD9870D7185A0FA100F9E94D /* interview.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,10 +391,14 @@
 			files = (
 				CD9870B4185A041000F9E94D /* FMDatabase.m in Sources */,
 				CD98708C185A021B00F9E94D /* AppDelegate.m in Sources */,
+				CD9870EA185B4C1700F9E94D /* TwitterLoginViewController.m in Sources */,
 				CD987088185A021B00F9E94D /* main.m in Sources */,
 				CD9870D3185A0A7000F9E94D /* AppTabBarController.m in Sources */,
 				CD9870D2185A0A7000F9E94D /* AppNavigationController.m in Sources */,
+				CD9870E5185B434A00F9E94D /* UIColor+Additions.m in Sources */,
+				CD9870E0185B3D8400F9E94D /* CustomColorsLoader.m in Sources */,
 				CD9870B5185A041000F9E94D /* FMDatabaseAdditions.m in Sources */,
+				CD9870DC185B395400F9E94D /* FacebookSessionManager.m in Sources */,
 				CD9870CC185A09B600F9E94D /* LoginViewController.m in Sources */,
 				CD9870B7185A041000F9E94D /* FMDatabase+Extras.m in Sources */,
 				CD9870B6185A041000F9E94D /* FMResultSet.m in Sources */,
@@ -480,6 +524,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Patrick Farrell (23EJ5J7AK7)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Patrick/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AmazingInterviewApp/AmazingInterviewApp-Prefix.pch";
 				INFOPLIST_FILE = "AmazingInterviewApp/AmazingInterviewApp-Info.plist";
@@ -495,6 +543,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Patrick Farrell (23EJ5J7AK7)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Patrick/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AmazingInterviewApp/AmazingInterviewApp-Prefix.pch";
 				INFOPLIST_FILE = "AmazingInterviewApp/AmazingInterviewApp-Info.plist";

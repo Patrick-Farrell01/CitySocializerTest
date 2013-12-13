@@ -10,4 +10,11 @@
 
 @interface MyDetailsViewController : UIViewController
 
+// **** Members **** //
+
+// **** Methods **** //
+
+- (void) checkUserAuthenticated;
+- (void) presentLoginViewController;
+
 @end
