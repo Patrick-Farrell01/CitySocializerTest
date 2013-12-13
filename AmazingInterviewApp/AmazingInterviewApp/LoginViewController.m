@@ -8,25 +8,31 @@
 
 #import "LoginViewController.h"
 
+
 @interface LoginViewController ()
 
 @end
 
 @implementation LoginViewController
+@synthesize textFieldEmailAddress, textFieldPassword, labelLoginMessage;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (id)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    self = [super initWithNibName:@"LoginViewController" bundle:nil];
+    if (self)
+    {
+        
     }
+    
     return self;
 }
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self customiseApperance];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,4 +41,22 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark Instance Methods
+
+- (void) customiseApperance
+{
+    
+}
+
+// Action when the 'Login' button has been pressed
+- (IBAction)loginButtonPressed:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+// Action when the 'Cancel' button has been pressed
+- (IBAction)cancelLoginPressed:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
