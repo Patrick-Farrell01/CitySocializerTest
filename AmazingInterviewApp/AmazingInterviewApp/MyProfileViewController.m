@@ -6,15 +6,17 @@
 //  Copyright (c) 2013 PatrickFarrell. All rights reserved.
 //
 
-#import "MyDetailsViewController.h"
+#import "MyProfileViewController.h"
 #import "FacebookSessionManager.h"
 #import "TwitterLoginViewController.h"
+#import "UserAccountManager.h"
 
-@interface MyDetailsViewController ()
+@interface MyProfileViewController ()
 
 @end
 
-@implementation MyDetailsViewController
+@implementation MyProfileViewController
+@synthesize labelUsername;
 
 #pragma mark LifeCycle Methods
 
@@ -23,7 +25,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        
+        [self setTitle:@"My Profile"];
     }
     return self;
 }
@@ -33,6 +35,7 @@
     [super viewDidLoad];
 
     [self checkUserAuthenticated];
+    [self populateViewControllerData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,6 +63,14 @@
 //        
 //    }
     
+}
+
+- (void) populateViewControllerData
+{
+    NSString * username = [[[UserAccountManager sharedInstance] currentUser] username];
+    
+    //set the current username
+    [[self labelUsername] setText:username];
 }
 
 // Present the LoginViewController for logging in via Faceboook

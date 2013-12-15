@@ -40,7 +40,11 @@
 - (void) customiseApperance
 {
     //set the background color of the view to custom twitter color
-    [[self view] setBackgroundColor:[[CustomColorsLoader sharedInstance] customColorWithName:@"TwitterBlue" withAlpha:1.0f]];
+    CustomColorsLoader * colorLoader = [[CustomColorsLoader alloc] initWithPlist:@"CustomColors"];
+    [colorLoader loadPListDictionary];
+    
+    
+    [[self view] setBackgroundColor:[colorLoader customColorWithName:@"TwitterBlue" withAlpha:1.0f]];
     [[self  labelLoginMessage] setText:@"Log in with Twitter"];
 }
 

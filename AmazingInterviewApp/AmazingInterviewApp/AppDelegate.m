@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "FMDatabaseManager.h"
-#import "MyDetailsViewController.h"
-#import "MyFriendsViewController.h"
+#import "MyProfileViewController.h"
+#import "FriendsViewController.h"
 #import "AppNavigationController.h"
 #import "AppTabBarController.h"
 
@@ -70,8 +70,8 @@
 - (void) createViewControllers
 {
     //create pointers for view controllers
-    UIViewController * myDetailsViewController = [[MyDetailsViewController alloc] init];
-    UIViewController * friendsViewController = [[MyFriendsViewController alloc] init];
+    UIViewController * myDetailsViewController = [[MyProfileViewController alloc] init];
+    UIViewController * friendsViewController = [[FriendsViewController alloc] init];
     
     //add each to their own nav controller
     AppNavigationController * detailsNavController = [[AppNavigationController alloc] initWithRootViewController:myDetailsViewController];

@@ -8,12 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyDetailsViewController : UIViewController
+
+@interface MyProfileViewController : UIViewController
+
 
 // **** Members **** //
 
+@property (strong, nonatomic) IBOutlet UILabel *labelUsername;
+
 // **** Methods **** //
 
+- (void) populateViewControllerData;
 - (void) checkUserAuthenticated;
 - (void) presentLoginViewController;
 

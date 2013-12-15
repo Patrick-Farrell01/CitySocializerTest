@@ -24,10 +24,10 @@
 		CD9870B6185A041000F9E94D /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870AF185A041000F9E94D /* FMResultSet.m */; };
 		CD9870B7185A041000F9E94D /* FMDatabase+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870B1185A041000F9E94D /* FMDatabase+Extras.m */; };
 		CD9870B8185A041000F9E94D /* FMDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870B3185A041000F9E94D /* FMDatabaseManager.m */; };
-		CD9870C0185A08F200F9E94D /* MyDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870BE185A08F200F9E94D /* MyDetailsViewController.m */; };
-		CD9870C1185A08F200F9E94D /* MyDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9870BF185A08F200F9E94D /* MyDetailsViewController.xib */; };
-		CD9870C7185A099900F9E94D /* MyFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870C5185A099900F9E94D /* MyFriendsViewController.m */; };
-		CD9870C8185A099900F9E94D /* MyFriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9870C6185A099900F9E94D /* MyFriendsViewController.xib */; };
+		CD9870C0185A08F200F9E94D /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870BE185A08F200F9E94D /* MyProfileViewController.m */; };
+		CD9870C1185A08F200F9E94D /* MyProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9870BF185A08F200F9E94D /* MyProfileViewController.xib */; };
+		CD9870C7185A099900F9E94D /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870C5185A099900F9E94D /* FriendsViewController.m */; };
+		CD9870C8185A099900F9E94D /* FriendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9870C6185A099900F9E94D /* FriendsViewController.xib */; };
 		CD9870CC185A09B600F9E94D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870CA185A09B600F9E94D /* LoginViewController.m */; };
 		CD9870CD185A09B600F9E94D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD9870CB185A09B600F9E94D /* LoginViewController.xib */; };
 		CD9870D2185A0A7000F9E94D /* AppNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870CF185A0A7000F9E94D /* AppNavigationController.m */; };
@@ -41,6 +41,13 @@
 		CD9870E5185B434A00F9E94D /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870E4185B434A00F9E94D /* UIColor+Additions.m */; };
 		CD9870E7185B445B00F9E94D /* facebooklogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9870E6185B445B00F9E94D /* facebooklogo.png */; };
 		CD9870EA185B4C1700F9E94D /* TwitterLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870E9185B4C1700F9E94D /* TwitterLoginViewController.m */; };
+		CD9870ED185DD43F00F9E94D /* PListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870EC185DD43F00F9E94D /* PListLoader.m */; };
+		CD9870EF185DD8F300F9E94D /* FriendRequestList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD9870EE185DD8F300F9E94D /* FriendRequestList.plist */; };
+		CD9870F2185DDADB00F9E94D /* FriendsPlIstLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870F1185DDADB00F9E94D /* FriendsPlIstLoader.m */; };
+		CD9870F6185DDF3A00F9E94D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870F5185DDF3A00F9E94D /* User.m */; };
+		CD9870F9185E219500F9E94D /* UserAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870F8185E219500F9E94D /* UserAccountManager.m */; };
+		CD9870FB185E26E000F9E94D /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9870FA185E26E000F9E94D /* avatar.png */; };
+		CD9870FE185E27FF00F9E94D /* DatabaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870FD185E27FF00F9E94D /* DatabaseDAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,12 +87,12 @@
 		CD9870B1185A041000F9E94D /* FMDatabase+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+Extras.m"; sourceTree = "<group>"; };
 		CD9870B2185A041000F9E94D /* FMDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseManager.h; sourceTree = "<group>"; };
 		CD9870B3185A041000F9E94D /* FMDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseManager.m; sourceTree = "<group>"; };
-		CD9870BD185A08F200F9E94D /* MyDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDetailsViewController.h; sourceTree = "<group>"; };
-		CD9870BE185A08F200F9E94D /* MyDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDetailsViewController.m; sourceTree = "<group>"; };
-		CD9870BF185A08F200F9E94D /* MyDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyDetailsViewController.xib; sourceTree = "<group>"; };
-		CD9870C4185A099900F9E94D /* MyFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFriendsViewController.h; sourceTree = "<group>"; };
-		CD9870C5185A099900F9E94D /* MyFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFriendsViewController.m; sourceTree = "<group>"; };
-		CD9870C6185A099900F9E94D /* MyFriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyFriendsViewController.xib; sourceTree = "<group>"; };
+		CD9870BD185A08F200F9E94D /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		CD9870BE185A08F200F9E94D /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
+		CD9870BF185A08F200F9E94D /* MyProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyProfileViewController.xib; sourceTree = "<group>"; };
+		CD9870C4185A099900F9E94D /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		CD9870C5185A099900F9E94D /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
+		CD9870C6185A099900F9E94D /* FriendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendsViewController.xib; sourceTree = "<group>"; };
 		CD9870C9185A09B600F9E94D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CD9870CA185A09B600F9E94D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CD9870CB185A09B600F9E94D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -106,6 +113,18 @@
 		CD9870E6185B445B00F9E94D /* facebooklogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebooklogo.png; sourceTree = "<group>"; };
 		CD9870E8185B4C1700F9E94D /* TwitterLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterLoginViewController.h; sourceTree = "<group>"; };
 		CD9870E9185B4C1700F9E94D /* TwitterLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterLoginViewController.m; sourceTree = "<group>"; };
+		CD9870EB185DD43F00F9E94D /* PListLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PListLoader.h; sourceTree = "<group>"; };
+		CD9870EC185DD43F00F9E94D /* PListLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PListLoader.m; sourceTree = "<group>"; };
+		CD9870EE185DD8F300F9E94D /* FriendRequestList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FriendRequestList.plist; sourceTree = "<group>"; };
+		CD9870F0185DDADB00F9E94D /* FriendsPlIstLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsPlIstLoader.h; sourceTree = "<group>"; };
+		CD9870F1185DDADB00F9E94D /* FriendsPlIstLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsPlIstLoader.m; sourceTree = "<group>"; };
+		CD9870F4185DDF3A00F9E94D /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		CD9870F5185DDF3A00F9E94D /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		CD9870F7185E219500F9E94D /* UserAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccountManager.h; sourceTree = "<group>"; };
+		CD9870F8185E219500F9E94D /* UserAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccountManager.m; sourceTree = "<group>"; };
+		CD9870FA185E26E000F9E94D /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		CD9870FC185E27FF00F9E94D /* DatabaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseDAO.h; sourceTree = "<group>"; };
+		CD9870FD185E27FF00F9E94D /* DatabaseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseDAO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,9 +188,11 @@
 		CD987081185A021B00F9E94D /* AmazingInterviewApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD9870F3185DDF1E00F9E94D /* Models */,
 				CD9870DD185B3D6F00F9E94D /* Helpers */,
 				CD9870BC185A052500F9E94D /* Resources */,
 				CD9870BA185A043000F9E94D /* Database */,
+				CD9870FF185E281300F9E94D /* DAO */,
 				CD9870BB185A051900F9E94D /* Classes */,
 				CD9870C2185A091500F9E94D /* User Interface */,
 				CD98708D185A021B00F9E94D /* Images.xcassets */,
@@ -238,6 +259,8 @@
 				CD9870D1185A0A7000F9E94D /* AppTabBarController.m */,
 				CD9870DA185B395400F9E94D /* FacebookSessionManager.h */,
 				CD9870DB185B395400F9E94D /* FacebookSessionManager.m */,
+				CD9870F7185E219500F9E94D /* UserAccountManager.h */,
+				CD9870F8185E219500F9E94D /* UserAccountManager.m */,
 				CD9870C3185A095800F9E94D /* View Controllers */,
 			);
 			name = Classes;
@@ -247,7 +270,9 @@
 			isa = PBXGroup;
 			children = (
 				CD9870E6185B445B00F9E94D /* facebooklogo.png */,
+				CD9870FA185E26E000F9E94D /* avatar.png */,
 				CD9870E1185B3D9200F9E94D /* CustomColors.plist */,
+				CD9870EE185DD8F300F9E94D /* FriendRequestList.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -256,8 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				CD9870CB185A09B600F9E94D /* LoginViewController.xib */,
-				CD9870C6185A099900F9E94D /* MyFriendsViewController.xib */,
-				CD9870BF185A08F200F9E94D /* MyDetailsViewController.xib */,
+				CD9870C6185A099900F9E94D /* FriendsViewController.xib */,
+				CD9870BF185A08F200F9E94D /* MyProfileViewController.xib */,
 			);
 			name = "User Interface";
 			sourceTree = "<group>";
@@ -265,10 +290,10 @@
 		CD9870C3185A095800F9E94D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				CD9870BD185A08F200F9E94D /* MyDetailsViewController.h */,
-				CD9870BE185A08F200F9E94D /* MyDetailsViewController.m */,
-				CD9870C4185A099900F9E94D /* MyFriendsViewController.h */,
-				CD9870C5185A099900F9E94D /* MyFriendsViewController.m */,
+				CD9870BD185A08F200F9E94D /* MyProfileViewController.h */,
+				CD9870BE185A08F200F9E94D /* MyProfileViewController.m */,
+				CD9870C4185A099900F9E94D /* FriendsViewController.h */,
+				CD9870C5185A099900F9E94D /* FriendsViewController.m */,
 				CD9870C9185A09B600F9E94D /* LoginViewController.h */,
 				CD9870CA185A09B600F9E94D /* LoginViewController.m */,
 				CD9870E8185B4C1700F9E94D /* TwitterLoginViewController.h */,
@@ -284,8 +309,30 @@
 				CD9870DF185B3D8400F9E94D /* CustomColorsLoader.m */,
 				CD9870E3185B434A00F9E94D /* UIColor+Additions.h */,
 				CD9870E4185B434A00F9E94D /* UIColor+Additions.m */,
+				CD9870EB185DD43F00F9E94D /* PListLoader.h */,
+				CD9870EC185DD43F00F9E94D /* PListLoader.m */,
+				CD9870F0185DDADB00F9E94D /* FriendsPlIstLoader.h */,
+				CD9870F1185DDADB00F9E94D /* FriendsPlIstLoader.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		CD9870F3185DDF1E00F9E94D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD9870F4185DDF3A00F9E94D /* User.h */,
+				CD9870F5185DDF3A00F9E94D /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CD9870FF185E281300F9E94D /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				CD9870FC185E27FF00F9E94D /* DatabaseDAO.h */,
+				CD9870FD185E27FF00F9E94D /* DatabaseDAO.m */,
+			);
+			name = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,11 +411,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD9870CD185A09B600F9E94D /* LoginViewController.xib in Resources */,
-				CD9870C8185A099900F9E94D /* MyFriendsViewController.xib in Resources */,
+				CD9870FB185E26E000F9E94D /* avatar.png in Resources */,
+				CD9870C8185A099900F9E94D /* FriendsViewController.xib in Resources */,
+				CD9870EF185DD8F300F9E94D /* FriendRequestList.plist in Resources */,
 				CD9870E2185B3D9200F9E94D /* CustomColors.plist in Resources */,
 				CD987086185A021B00F9E94D /* InfoPlist.strings in Resources */,
 				CD98708E185A021B00F9E94D /* Images.xcassets in Resources */,
-				CD9870C1185A08F200F9E94D /* MyDetailsViewController.xib in Resources */,
+				CD9870C1185A08F200F9E94D /* MyProfileViewController.xib in Resources */,
 				CD9870E7185B445B00F9E94D /* facebooklogo.png in Resources */,
 				CD9870D7185A0FA100F9E94D /* interview.db in Resources */,
 			);
@@ -392,19 +441,24 @@
 				CD9870B4185A041000F9E94D /* FMDatabase.m in Sources */,
 				CD98708C185A021B00F9E94D /* AppDelegate.m in Sources */,
 				CD9870EA185B4C1700F9E94D /* TwitterLoginViewController.m in Sources */,
+				CD9870FE185E27FF00F9E94D /* DatabaseDAO.m in Sources */,
 				CD987088185A021B00F9E94D /* main.m in Sources */,
 				CD9870D3185A0A7000F9E94D /* AppTabBarController.m in Sources */,
 				CD9870D2185A0A7000F9E94D /* AppNavigationController.m in Sources */,
 				CD9870E5185B434A00F9E94D /* UIColor+Additions.m in Sources */,
 				CD9870E0185B3D8400F9E94D /* CustomColorsLoader.m in Sources */,
 				CD9870B5185A041000F9E94D /* FMDatabaseAdditions.m in Sources */,
+				CD9870F6185DDF3A00F9E94D /* User.m in Sources */,
 				CD9870DC185B395400F9E94D /* FacebookSessionManager.m in Sources */,
 				CD9870CC185A09B600F9E94D /* LoginViewController.m in Sources */,
 				CD9870B7185A041000F9E94D /* FMDatabase+Extras.m in Sources */,
 				CD9870B6185A041000F9E94D /* FMResultSet.m in Sources */,
-				CD9870C7185A099900F9E94D /* MyFriendsViewController.m in Sources */,
+				CD9870F9185E219500F9E94D /* UserAccountManager.m in Sources */,
+				CD9870C7185A099900F9E94D /* FriendsViewController.m in Sources */,
+				CD9870ED185DD43F00F9E94D /* PListLoader.m in Sources */,
+				CD9870F2185DDADB00F9E94D /* FriendsPlIstLoader.m in Sources */,
 				CD9870B8185A041000F9E94D /* FMDatabaseManager.m in Sources */,
-				CD9870C0185A08F200F9E94D /* MyDetailsViewController.m in Sources */,
+				CD9870C0185A08F200F9E94D /* MyProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +671,7 @@
 				CD9870A6185A021B00F9E94D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD9870A7185A021B00F9E94D /* Build configuration list for PBXNativeTarget "AmazingInterviewAppTests" */ = {
 			isa = XCConfigurationList;
@@ -625,6 +680,7 @@
 				CD9870A9185A021B00F9E94D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

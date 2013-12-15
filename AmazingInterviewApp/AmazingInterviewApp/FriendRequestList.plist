@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FriendRequests</key>
+	<array>
+		<dict>
+			<key>friendID</key>
+			<string>abcde</string>
+			<key>username</key>
+			<string>John Smith</string>
+		</dict>
+		<dict>
+			<key>friendID</key>
+			<string>fghij</string>
+			<key>username</key>
+			<string>Mary Smith</string>
+		</dict>
+	</array>
+</dict>
+</plist>

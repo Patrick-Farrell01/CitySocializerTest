@@ -8,7 +8,7 @@
 
 #import "UIColor+Additions.h"
 
-@implementation UIColor (Additions)
+@implementation UIColor (Extras)
 
 + (UIColor*) colorFromHexString:(NSString*)hexString alpha:(float) alpha;
 {
