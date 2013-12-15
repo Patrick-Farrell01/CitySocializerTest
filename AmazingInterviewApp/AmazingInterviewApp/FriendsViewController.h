@@ -24,6 +24,7 @@
 
 // **** Members **** //
 
+- (void) customiseUI;
 - (void) populateViewControllerData;
 - (void) loadCurrentFriends;
 - (void) loadFriendRequestData;

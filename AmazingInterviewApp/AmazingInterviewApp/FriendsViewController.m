@@ -8,6 +8,8 @@
 
 #import "FriendsViewController.h"
 #import "FriendsPlIstLoader.h"
+#import "DatabaseDAO.h"
+#import "UserAccountManager.h"
 
 @interface FriendsViewController ()
 
@@ -36,6 +38,8 @@
     
     [[self tableViewFriends] setDelegate:self];
     [[self tableViewFriends] setDataSource:self];
+    
+    [self customiseUI];
 }
 
 - (void) viewWillAppear:(BOOL)animated
@@ -85,6 +89,25 @@
 
 #pragma Instance Methods
 
+// Cutomise UI Elements
+- (void) customiseUI
+{
+    //cutomise the content inset of the tableview
+    [[self tableViewFriends] setContentInset:UIEdgeInsetsMake(-50, 0, 0, 0)];
+
+    //customise the UI of the 'friends' and 'friend requests' buttons
+    [[[self btnFriendRequests] layer] setMasksToBounds:YES];
+    [[[self btnFriendRequests] layer] setCornerRadius:7.0f];
+    [[[self btnFriendRequests] layer] setBorderWidth:1.0f];
+    [[[self btnFriendRequests] layer] setBorderColor:[[UIColor lightGrayColor] CGColor]];
+    
+    [[[self btnFriends] layer] setMasksToBounds:YES];
+    [[[self btnFriends] layer] setCornerRadius:7.0f];
+    [[[self btnFriends] layer] setBorderWidth:1.0f];
+    [[[self btnFriends] layer] setBorderColor:[[UIColor lightGrayColor] CGColor]];
+}
+
+
 // Populate all the data that the ViewController uses/displays
 - (void) populateViewControllerData
 {
@@ -95,7 +118,17 @@
 // Load the current friends data from Db
 - (void) loadCurrentFriends
 {
-   
+    DatabaseDAO * dao = [DatabaseDAO sharedInstance];
+    
+    [dao openDB];
+    [self setFriends:
+     [dao readAllFriendsForUser:[[[UserAccountManager sharedInstance] currentUser] userID]]];
+    [dao closeDB];
+    
+    //change the color of the buttons for UX sake
+    [[self btnFriends] setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [[self btnFriendRequests] setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+
 }
 
 // Load the friend requests (from plist but would be from some external api)
@@ -106,12 +139,15 @@
     
     [self setFriends:[loader pendingFriendsList]];
     
+    //change the color of the buttons for UX sake
+    [[self btnFriendRequests] setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [[self btnFriends] setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
 }
 
 // Envoked when the 'Friends' is tapped
 - (IBAction)friendsButtonClicked:(id)sender
 {
-    
+    [self loadCurrentFriends];
     [[self tableViewFriends] reloadData];
 }
 

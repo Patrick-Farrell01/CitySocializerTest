@@ -36,7 +36,7 @@
     self = [super init];
     if (self)
     {
-        [self setDatabaseName:@"owe.db"];
+        [self setDatabaseName:@"interview.db"];
     }
     return self;
 }
@@ -70,7 +70,7 @@
     
     if([self database] != NULL)
     {
-        NSString * sql = @"SELECT * FROM user WHERE friendID = ?";
+        NSString * sql = @"SELECT * FROM User WHERE friendID = ?";
         
         FMResultSet *results = [[self database] executeQuery:sql, [currentUser userID]];
         
@@ -96,7 +96,7 @@
     
     if([self database] != NULL)
     {
-        NSString * sql = @"SELECT * FROM user WHERE unique_id = ?";
+        NSString * sql = @"SELECT * FROM User WHERE unique_id = ?";
         FMResultSet *results = [[self database] executeQuery:sql, userID];
         
         while([results next])
@@ -112,122 +112,6 @@
     return user;
 }
 
-// Read all the IOwes. An IOwe is simply an Owe where the 'from' is this users' account
-- (NSArray *) readAllIOwesFromDB
-{
-    NSMutableArray * owes = [[NSMutableArray alloc] init];
-    
-    if([self database] != NULL)
-    {
-        NSString * sql = @"SELECT * FROM Owe WHERE owe_from_username = ?";
-        NSString * userName = [[[UserAccountManager sharedInstance] currentUser] username];
-        
-        FMResultSet *results = [[self database] executeQuery:sql, userName];
-        
-        while([results next])
-        {
-            Owe * dbOwe = [[Owe alloc] init];
-            
-            [dbOwe setOweID:[results stringForColumn:@"id"]];
-            [dbOwe setOweToUsername:[results stringForColumn:@"owe_to_username"]];
-            [dbOwe setOweFromUsername:[results stringForColumn:@"owe_from_username"]];
-            [dbOwe setDescription:[results stringForColumn:@"description"]];
-            [dbOwe setAmountRemaining:[results doubleForColumn:@"amount_remain"]];
-            [dbOwe setAmountTotal:[results doubleForColumn:@"amount_total"]];
-            [dbOwe setDateCreated:[AppHelperFunctions shortStyleDateFromString:[results        stringForColumn:@"dateCreated"]]];
-            
-            [owes addObject:dbOwe];
-        }
-        
-    }
-    
-    return [owes copy];
-}
-
-// Read all the OwesMe. An OweMe is simply an Owe where the 'to' is this users' account
-- (NSArray *) readAllOwesMeFromDB
-{
-    NSMutableArray * owes = [[NSMutableArray alloc] init];
-    
-    if([self database] != NULL)
-    {
-        NSString * sql = @"SELECT * FROM Owe WHERE owe_to_username = ?";
-        NSString * userName = [[[UserAccountManager sharedInstance] currentUser] username];
-        
-        FMResultSet *results = [[self database] executeQuery:sql, userName];
-        
-        while([results next])
-        {
-            Owe * dbOwe = [[Owe alloc] init];
-            
-            [dbOwe setOweID:[results stringForColumn:@"id"]];
-            [dbOwe setOweToUsername:[results stringForColumn:@"owe_to_username"]];
-            [dbOwe setOweFromUsername:[results stringForColumn:@"owe_from_username"]];
-            //[dbOwe setDateCreatedFromString:[results stringForColumn:@"dateCreated"]];
-            [dbOwe setDescription:[results stringForColumn:@"description"]];
-            [dbOwe setAmountRemaining:[results doubleForColumn:@"amount_remain"]];
-            [dbOwe setAmountTotal:[results doubleForColumn:@"amount_total"]];
-            [dbOwe setDateCreated:[AppHelperFunctions shortStyleDateFromString:[results        stringForColumn:@"dateCreated"]]];
-            
-            [owes addObject:dbOwe];
-        }
-        
-    }
-    
-    return [owes copy];
-}
-
-// Reads database table OwePayment for a payment with a specified paymentID
-- (OwePayment *) readOwePaymentByPaymentID:(NSString *) paymentID
-{
-    OwePayment * dbOwePayment = [[OwePayment alloc] init];
-    
-    if([self database] != NULL)
-    {
-        NSString * sql = @"SELECT * FROM OwePayments WHERE payment_id = ?";
-        FMResultSet * results = [[self database] executeQuery:sql, paymentID];
-        
-        while([results next])
-        {
-            OwePayment * dbOwePayment = [[OwePayment alloc] init];
-            
-            [dbOwePayment setOwePaymentID:[results stringForColumn:@"payment_id"]];
-            [dbOwePayment setOweID:[results stringForColumn:@"owe_id"]];
-            [dbOwePayment setAmountPaid:[results doubleForColumn:@"amount_paid"]];
-            [dbOwePayment setDatePaid:[AppHelperFunctions shortStyleDateFromString:[results        stringForColumn:@"date_paid"]]];
-            
-        }
-    }
-    
-    return dbOwePayment;
-    
-}
-
-// Reads database table OwePayment for all OwePayments with a matching oweID
-- (NSArray *) readAllOwePaymentsByOweID:(NSString *) oweID
-{
-    NSMutableArray * owePayments = [[NSMutableArray alloc] init];
-    
-    if([self database] != NULL)
-    {
-        NSString * sql = @"SELECT * FROM OwePayments WHERE owe_id = ? ORDER BY [order_index] DESC";
-        FMResultSet *results = [[self database] executeQuery:sql, oweID];
-        
-        while([results next])
-        {
-            OwePayment * dbOwePayment = [[OwePayment alloc] init];
-            
-            [dbOwePayment setOwePaymentID:[results stringForColumn:@"payment_id"]];
-            [dbOwePayment setOweID:[results stringForColumn:@"owe_id"]];
-            [dbOwePayment setAmountPaid:[results doubleForColumn:@"amount_paid"]];
-            [dbOwePayment setDatePaid:[AppHelperFunctions shortStyleDateFromString:[results        stringForColumn:@"date_paid"]]];
-            
-            [owePayments addObject:dbOwePayment];
-        }
-    }
-    
-    return [owePayments copy];
-}
 
 
 #pragma Update
