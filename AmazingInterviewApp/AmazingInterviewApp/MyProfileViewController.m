@@ -49,20 +49,17 @@
 // Checks the FBSession state. Present login page if not authenticated
 - (void) checkUserAuthenticated
 {
-    //check users preference for facebook / twitter
+    /*  General though process here.
+     
+     1) Check that the user's login session is still open
+     2) If it is closed then lauch the loginViewController again
+     3) It will authorise the credentials and allow the user to continue to the app
+     
+     */
     
-    // if (facebook)
     
-//    //check the session
-//    BOOL sessionOpen = [[[FacebookSessionManager sharedInstance] session] isOpen];
-//    
-//    if(!sessionOpen)
-//    {
-//        //present the login view controller
-//        [self presentLoginViewController];
-//        
-//    }
-    
+    //just present the login view controller to show the process
+    [self presentLoginViewController];
 }
 
 - (void) populateViewControllerData
