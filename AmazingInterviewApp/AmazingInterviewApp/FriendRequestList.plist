@@ -5,13 +5,31 @@
 	<key>FriendRequests</key>
 	<array>
 		<dict>
-			<key>friendID</key>
+			<key>userID</key>
+			<string>uuuuuu</string>
+			<key>username</key>
+			<string>Rachel Higgins</string>
+		</dict>
+		<dict>
+			<key>userID</key>
+			<string>klklklk</string>
+			<key>username</key>
+			<string>Stuart Higgins</string>
+		</dict>
+		<dict>
+			<key>userID</key>
+			<string>ghghgh</string>
+			<key>username</key>
+			<string>Ryan Smith</string>
+		</dict>
+		<dict>
+			<key>userID</key>
 			<string>abcde</string>
 			<key>username</key>
 			<string>John Smith</string>
 		</dict>
 		<dict>
-			<key>friendID</key>
+			<key>userID</key>
 			<string>fghij</string>
 			<key>username</key>
 			<string>Mary Smith</string>

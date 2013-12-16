@@ -7,6 +7,7 @@
 //
 
 #import "FriendsPlistLoader.h"
+#import "User.h"
 
 @implementation FriendsPlistLoader
 

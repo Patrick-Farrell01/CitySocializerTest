@@ -9,6 +9,6 @@
 #import "User.h"
 
 @implementation User
-@synthesize userID, username;
+@synthesize userID, username, friendID;
 
 @end

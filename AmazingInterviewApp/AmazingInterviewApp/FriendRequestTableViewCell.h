@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "TableViewCellAction.h"
+#import "User.h"
 
 @interface FriendRequestTableViewCell : UITableViewCell
 
 // **** Members **** //
 @property (strong, nonatomic) IBOutlet UILabel *labelUsername;
 @property (weak) id <TableViewCellAction> cellActionDelegate;
+@property (nonatomic, strong) User * cellUser;
 
 // **** Methods **** //
+- (void) configureWithUser:(User *) user;
 - (IBAction)acceptFriendClicked:(id)sender;
 - (IBAction)declineFriendClicked:(id)sender;
 

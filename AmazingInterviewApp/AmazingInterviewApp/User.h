@@ -12,5 +12,6 @@
 
 @property (nonatomic, retain) NSString * userID;
 @property (nonatomic, retain) NSString * username;
+@property (nonatomic, retain) NSString * friendID;
 
 @end

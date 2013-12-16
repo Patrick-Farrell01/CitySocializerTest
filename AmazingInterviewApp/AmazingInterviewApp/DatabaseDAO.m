@@ -57,6 +57,23 @@
 #pragma Create
 
 
+- (void) createUserInDB:(User *) userToCreate;
+{
+    NSString * insert = @"INSERT INTO User";
+    NSString * values = @"(unique_id, username, friendID) VALUES (?,?,?)";
+    
+    NSString * sql = [insert stringByAppendingString:values];
+    
+    if([self database] != NULL)
+    {
+        [[self database] executeUpdate:sql,
+         [userToCreate userID],
+         [userToCreate username],
+         [userToCreate friendID]];
+    }
+
+}
+
 #pragma Read
 
 // Read all the friends for a particular user
@@ -80,6 +97,7 @@
             
             [dbUser setUsername:[results stringForColumn:@"username"]];
             [dbUser setUserID:[results stringForColumn:@"unique_id"]];
+            [dbUser setFriendID:[results stringForColumn:@"friendID"]];
             
             [friends addObject:dbUser];
         }
@@ -103,6 +121,7 @@
         {
             [user setUsername:[results stringForColumn:@"username"]];
             [user setUserID:[results stringForColumn:@"unique_id"]];
+            [user setFriendID:[results stringForColumn:@"friendID"]];
         }
         
         [results close];

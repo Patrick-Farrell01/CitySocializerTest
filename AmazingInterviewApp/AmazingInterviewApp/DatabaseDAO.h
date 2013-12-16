@@ -25,7 +25,7 @@
 - (void) openDB;
 - (void) closeDB;
 
-
+- (void) createUserInDB:(User *) userToCreate;
 - (NSArray *) readAllFriendsForUser:(NSString *) userID;
 - (User *) readUserByUserID:(NSString *) userID;
 - (void) deleteFriendWithUserID:(NSString *) userID;

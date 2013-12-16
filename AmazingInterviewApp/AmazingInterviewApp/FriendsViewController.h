@@ -30,6 +30,8 @@
 - (void) populateViewControllerData;
 - (void) loadCurrentFriends;
 - (void) loadFriendRequestData;
+- (void) setCountOfFriendRequestButton:(int) count;
+- (NSArray *) getCurrentFriendsFromDB;
 - (UITableViewCell *) cellForFriendList:(UITableView *)tableView atIndex:(NSIndexPath *)indexPath;
 - (UITableViewCell *) cellForFriendRequestList:(UITableView *)tableView atIndex:(NSIndexPath *)indexPath;
 - (IBAction)friendsButtonClicked:(id)sender;

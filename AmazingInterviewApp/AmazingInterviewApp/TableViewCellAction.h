@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
 
 @protocol TableViewCellAction <NSObject>
 
-- (void) didSelectPositive;
-- (void) didSelectNegative;
+- (void) didSelectPositiveWithUser:(User *) userToAccept;
+- (void) didSelectNegativeUser:(User *) userToDecline;
 
 @end

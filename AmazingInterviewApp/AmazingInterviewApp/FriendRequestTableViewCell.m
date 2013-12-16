@@ -9,7 +9,7 @@
 #import "FriendRequestTableViewCell.h"
 
 @implementation FriendRequestTableViewCell
-@synthesize cellActionDelegate;
+@synthesize cellActionDelegate, cellUser;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -27,18 +27,25 @@
     // Configure the view for the selected state
 }
 
+// Set the cell up with the User
+- (void) configureWithUser:(User *) user
+{
+    [self setCellUser:user];
+    [[self labelUsername] setText:[user username]];
+}
+
 // Action when accepting the Friend Request
 - (IBAction)acceptFriendClicked:(id)sender
 {
     //call positive on the cell protocol
-    [[self cellActionDelegate] didSelectPositive];
+    [[self cellActionDelegate] didSelectPositiveWithUser:cellUser];
 }
 
 // Action when declining the Friend Request
 - (IBAction)declineFriendClicked:(id)sender
 {
     //call negative on the cell protocol
-    [[self cellActionDelegate] didSelectNegative];
+    [[self cellActionDelegate] didSelectNegativeUser:cellUser];
 }
 
 @end
