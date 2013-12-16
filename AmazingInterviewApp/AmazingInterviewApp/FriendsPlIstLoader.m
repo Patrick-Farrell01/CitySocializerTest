@@ -10,6 +10,18 @@
 
 @implementation FriendsPlistLoader
 
+// Return the Number of records in the plist
+- (int) getPendingFriendCount
+{
+    int count = 0;
+    
+    //todo : this is not very efficient, calling the friends list, just to get the count
+    count = [[self pendingFriendsList] count];
+    
+    return count;
+}
+
+
 // Return a list of friends built from plist
 -(NSArray *) pendingFriendsList
 {

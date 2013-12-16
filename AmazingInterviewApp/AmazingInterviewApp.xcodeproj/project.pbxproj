@@ -48,6 +48,10 @@
 		CD9870F9185E219500F9E94D /* UserAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870F8185E219500F9E94D /* UserAccountManager.m */; };
 		CD9870FB185E26E000F9E94D /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9870FA185E26E000F9E94D /* avatar.png */; };
 		CD9870FE185E27FF00F9E94D /* DatabaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9870FD185E27FF00F9E94D /* DatabaseDAO.m */; };
+		CD987102185F2A2500F9E94D /* FriendRequestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD987101185F2A2500F9E94D /* FriendRequestTableViewCell.m */; };
+		CD987104185F2A7100F9E94D /* FriendRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD987103185F2A7100F9E94D /* FriendRequestTableViewCell.xib */; };
+		CD987107185F344A00F9E94D /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987105185F344A00F9E94D /* cancel.png */; };
+		CD987108185F344A00F9E94D /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = CD987106185F344A00F9E94D /* ok.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +129,12 @@
 		CD9870FA185E26E000F9E94D /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		CD9870FC185E27FF00F9E94D /* DatabaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseDAO.h; sourceTree = "<group>"; };
 		CD9870FD185E27FF00F9E94D /* DatabaseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseDAO.m; sourceTree = "<group>"; };
+		CD987100185F2A2500F9E94D /* FriendRequestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendRequestTableViewCell.h; sourceTree = "<group>"; };
+		CD987101185F2A2500F9E94D /* FriendRequestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendRequestTableViewCell.m; sourceTree = "<group>"; };
+		CD987103185F2A7100F9E94D /* FriendRequestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendRequestTableViewCell.xib; sourceTree = "<group>"; };
+		CD987105185F344A00F9E94D /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		CD987106185F344A00F9E94D /* ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok.png; sourceTree = "<group>"; };
+		CD987109185F356400F9E94D /* TableViewCellAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellAction.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +271,9 @@
 				CD9870DB185B395400F9E94D /* FacebookSessionManager.m */,
 				CD9870F7185E219500F9E94D /* UserAccountManager.h */,
 				CD9870F8185E219500F9E94D /* UserAccountManager.m */,
+				CD987100185F2A2500F9E94D /* FriendRequestTableViewCell.h */,
+				CD987101185F2A2500F9E94D /* FriendRequestTableViewCell.m */,
+				CD987109185F356400F9E94D /* TableViewCellAction.h */,
 				CD9870C3185A095800F9E94D /* View Controllers */,
 			);
 			name = Classes;
@@ -269,6 +282,8 @@
 		CD9870BC185A052500F9E94D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CD987105185F344A00F9E94D /* cancel.png */,
+				CD987106185F344A00F9E94D /* ok.png */,
 				CD9870E6185B445B00F9E94D /* facebooklogo.png */,
 				CD9870FA185E26E000F9E94D /* avatar.png */,
 				CD9870E1185B3D9200F9E94D /* CustomColors.plist */,
@@ -283,6 +298,7 @@
 				CD9870CB185A09B600F9E94D /* LoginViewController.xib */,
 				CD9870C6185A099900F9E94D /* FriendsViewController.xib */,
 				CD9870BF185A08F200F9E94D /* MyProfileViewController.xib */,
+				CD987103185F2A7100F9E94D /* FriendRequestTableViewCell.xib */,
 			);
 			name = "User Interface";
 			sourceTree = "<group>";
@@ -410,13 +426,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD987108185F344A00F9E94D /* ok.png in Resources */,
 				CD9870CD185A09B600F9E94D /* LoginViewController.xib in Resources */,
 				CD9870FB185E26E000F9E94D /* avatar.png in Resources */,
 				CD9870C8185A099900F9E94D /* FriendsViewController.xib in Resources */,
+				CD987107185F344A00F9E94D /* cancel.png in Resources */,
 				CD9870EF185DD8F300F9E94D /* FriendRequestList.plist in Resources */,
 				CD9870E2185B3D9200F9E94D /* CustomColors.plist in Resources */,
 				CD987086185A021B00F9E94D /* InfoPlist.strings in Resources */,
 				CD98708E185A021B00F9E94D /* Images.xcassets in Resources */,
+				CD987104185F2A7100F9E94D /* FriendRequestTableViewCell.xib in Resources */,
 				CD9870C1185A08F200F9E94D /* MyProfileViewController.xib in Resources */,
 				CD9870E7185B445B00F9E94D /* facebooklogo.png in Resources */,
 				CD9870D7185A0FA100F9E94D /* interview.db in Resources */,
@@ -457,6 +476,7 @@
 				CD9870C7185A099900F9E94D /* FriendsViewController.m in Sources */,
 				CD9870ED185DD43F00F9E94D /* PListLoader.m in Sources */,
 				CD9870F2185DDADB00F9E94D /* FriendsPlIstLoader.m in Sources */,
+				CD987102185F2A2500F9E94D /* FriendRequestTableViewCell.m in Sources */,
 				CD9870B8185A041000F9E94D /* FMDatabaseManager.m in Sources */,
 				CD9870C0185A08F200F9E94D /* MyProfileViewController.m in Sources */,
 			);

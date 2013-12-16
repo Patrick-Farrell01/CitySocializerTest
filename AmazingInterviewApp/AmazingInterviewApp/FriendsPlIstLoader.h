@@ -14,6 +14,7 @@
 
 // **** Methods **** //
 
+- (int) getPendingFriendCount;
 -(NSArray *) pendingFriendsList;
 
 @end

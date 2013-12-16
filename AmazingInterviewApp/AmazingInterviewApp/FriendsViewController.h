@@ -7,15 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FriendsPlIstLoader.h"
+#import "TableViewCellAction.h"
 
-@interface FriendsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface FriendsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, TableViewCellAction>
 
 // **** Members **** //
 
 @property (strong, nonatomic) IBOutlet UITableView *tableViewFriends;
-//@property (strong, nonatomic) NSArray * friendRequests;
-//@property (strong, nonatomic) NSArray * currentFriends;
 @property (strong, nonatomic) NSArray * friends;
+@property (nonatomic) BOOL isFriendsList;
+@property (nonatomic, retain) FriendsPlistLoader * pendingFriendsLoader;
 
 
 @property (strong, nonatomic) IBOutlet UIButton *btnFriends;
@@ -28,7 +30,10 @@
 - (void) populateViewControllerData;
 - (void) loadCurrentFriends;
 - (void) loadFriendRequestData;
+- (UITableViewCell *) cellForFriendList:(UITableView *)tableView atIndex:(NSIndexPath *)indexPath;
+- (UITableViewCell *) cellForFriendRequestList:(UITableView *)tableView atIndex:(NSIndexPath *)indexPath;
 - (IBAction)friendsButtonClicked:(id)sender;
 - (IBAction)friendRequestButtonClicked:(id)sender;
+
 
 @end
